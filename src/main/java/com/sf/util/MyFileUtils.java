@@ -25,7 +25,6 @@ public class MyFileUtils {
                 Std.print("[开始解压]:" + filePath);
                 unzip(file, filePath);
             } catch (Exception e) {
-                Std.print(e.getMessage());
             } finally {
                 delete(file);
             }
@@ -76,7 +75,6 @@ public class MyFileUtils {
                 fos.write(buffer, 0, count);
             }
         } catch (Exception e) {
-            Std.print(e.getMessage());
         }
     }
 
